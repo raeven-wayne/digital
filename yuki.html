@@ -6,49 +6,165 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Yuki's House</title>
+	<link rel="icon" type="image/x-icon" href="C:\Users\Raeve\Downloads\favicon.ico">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
 <style>
-	
-.header1 {
-  padding: 1px;
-  text-align: center;
-  background: #c5ec64;
-  color: white;
-  font-size: 18px;
+ 
+body{
+background-image: url('rainbow-bg.jpg');
+margin-bottom: 2%;
+color: #5c6358;
+font-family: 'gamja flower', sans-serif;
 }
 
-.forpara{
-		font-size:18px;
-		background-color:#faffe9;
-		text-align:center;
-		margin-left:15%;
-		margin-right:15%;
-		padding:20px;
-		border-radius: 20px;
-	}
+.gamja-flower-regular {
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-.marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
+#nikostare{
+	width: 20%;
+	height: 20%;
+	background-color: white;
+	border: 3px double greenyellow;
 }
 
 
-.ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
+#all{
+width: 60%;
+margin: 0 auto;
 }
 
 
-.post {
+#linksbox {
+    width: 150px;
+    background-color: #a6e5fd;
+    height: 100%;
+    position: fixed;
+    box-shadow: 0 0 20px #f2ff89;
+    top: 285px;
+    margin-left: -200px;
+   }
+ 
+#header{
+width: 98%;
+height: 150px;
+border-top: 1px solid #6e756a;
+border-left: 1px solid #6e756a;
+border-right: 1px solid #6e756a;
+border-bottom: 0px;
+border-radius: 35px 35px 0px 0px;
+background-color: #a1f9ff;
+background-image: url('mamegoma.gif');
+background-position: center center;
+background-repeat: repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ 
+#title{
+margin: 0;
+text-align: center;
+color: #FDD33F;
+text-shadow: 0px 0px 1px #000041;
+}
+ 
+#navbox{
+margin: 0px 0px 20px 0px;
+width: 98.2%;
+background-color: white;
+}
+ 
+#navbox ul{
+margin: 0;
+padding: 10px;
+text-align: center;
+border: 1px solid lightblue;
+}
+ 
+#navbox li{
+list-style-type: none;
+display: inline;
+font-size: 19px;
+margin: 10px;
+}
+ 
+.main{
+width: 100%;
+}
+ 
+.post{
+width: 100%;
+}
+ 
+.text{
+width: 84%;
+padding: 25px;
+border: 1px solid #6e756a;
+margin-bottom: 20px;
+background-color: #7cdfff;
+box-shadow: 0 0 20px yellow;
+}
+ 
+.textborder{
+background-color: #d7f9ff;
+border: 3px dashed #8beeff;
+padding: 20px;
+font-size: 15px;
+}
+ 
+.subheaders{
+margin: 0;
+font-weight: normal;
+font-size: 20px;
+}
+ 
+.date{
+margin: 0;
+font-size: 13px;
+}
+ 
+ 
+a{
+color: #1dbbdb;
+text-decoration: none;
+}
+ 
+a:VISITED{
+color: #1dbbdb;
+text-decoration: none;
+}
+ 
+a:HOVER{
+font-weight: bold;
+}
+ 
+a:ACTIVEVIEW{
+font-weight: normal;
+}
+ 
+ 
+::-webkit-scrollbar{
+width: 6px; 
+}
+ 
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+ 
+::-webkit-scrollbar-thumb{
+background-color: #E79D44;
+}
+ 
+ 
+
+.square {
     width: 475px;
     margin: 0 0 25px 0;
     overflow: hidden;
@@ -65,6 +181,21 @@
 			border: 3px dashed #001ea6;
     	border-radius: 10px; 
 
+  #container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+ .boxed {
+    background-color: #FFFFFF;
+    border: 2px dashed #CCE1FF;
+    outline: 5px solid #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 70px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
 
 }
 
@@ -75,15 +206,33 @@
 
 <body style="background-color: #ff99d8;">
 
-<div class="header1">
+	<div id="all">
+<div id="header"><h1 id="title">PINNIPED PILE</h1></div>
+<div id="navbox">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="niko.html">NIKO</a></li>
+<li><a href="yuki.html">YUKI</a></li>
+<li><a href="hiyori.html">HIYORI</a></li>
+<li><a href="yochan.html">YO-CHAN</a></li>
+<li><a href="agu.html">AGU</a></li>
+<li><a href="kyoro.html">KYORO</a></li>
+<li><a href="kroshik.html">KROSHIK</a></li>
+</ul>
+</div>
+
+<div id="maine">
 	<h1>YUKI...</h1>
 
-<div class="container">
+<div id ="container">
   <img src="yuki-roll-over.png" width="500px">
-  <p class="text" id="rcorners2">HELLO THERE! YUKI HERE!</p>
-</div>
+  <p class="text">HELLO THERE! YUKI HERE!</p>
 </div>
 
+
+<div id="main">
+<div class="post">
+<div class="text">
 
 <ul>
 <li>
@@ -117,7 +266,7 @@
 	</ul>
 
 <center>
-	<div class="post">
+	<div class="square">
 
 	<center><p>Miss Yuki, a 17-year-old Ringed Seal is an adorable big ol' baby. She exhibits at the Osaka Aquariam Kaiyukan in Osaka, Japan. Have you noticed how big she is? She's so round! Yuki became famous for her robust size. She is extremely rounded out...she is a seal, after all. But there is something so bizarre about her shape, she is pratcially a balloon! She enhances her chubbyness by pulling her neck in to keep herself warm. Cute~!♡ </p></center>
 
@@ -125,7 +274,7 @@
 </div>
 
 <center>
-	<div class="post">
+	<div class="square">
 		<center><p>
 			Have you ever wondered what it would be like to have such a blubberous creature near you? Well look no further! In 2019, Yuki debuted with a plush that looks just like her! Look at how fat she is here...what a look.
 		
@@ -139,7 +288,7 @@
 
 
 <center>
-	<div class="post">
+	<div class="square">
 		<center><p>
 			
 		<a href="https://www.amazon.com/23-7-inch-Large-Plush-Pillow/dp/B09QLD439B/ref=asc_df_B09QLD439B/?tag=hyprod-20&linkCode=df0&hvadid=693370464653&hvpos=&hvnetw=g&hvrand=17867074660978586969&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1019564&hvtargid=pla-1932093033321&mcid=bef69aa08b603079af28217bfd3a46cf&th=1">♡Yuki Plush♡ </a>
@@ -151,7 +300,7 @@
 <img class="shadow" src="yuki-comparison-plush.jpg" width="30%">
 
 <center>
-	<div class="post">
+	<div class="square">
 		<center><p>
 			Me personally, I have about 5 of these in my home and all of them have been a joy to have. She's just as round as she is in real life! So soft and cuddly, 100% worth the price. You just gotta get one, look at her sweet little face!! 
 		
@@ -164,6 +313,7 @@
 
 
 </div>
+
 </center>
 <a href="index.html">back to home!
 </body>
